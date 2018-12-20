@@ -6,57 +6,133 @@
   <meta name="viewport" content="width=device-width, initial-scale-1">
 
   <style>
-    body {
-      background-color: black;
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: 'Oswald', sans-serif;
+      background-color: #242582;
     }
 
-    h1 {
-      font-family: 'Oswald', sans-serif;
-      color: green;
+    p {
+      font-size: 24px;
+      color: white;
+    }
+
+    .me-pic {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("PicOfMe.jpg");
+      height: 50%;
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .me-text {
       text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+    }
+
+    .typewriter h1 {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+
+      color: orange;
+      font-family: 'Ramabhadra', sans-serif;
+      font-size: 60px;
+
+      animation:
+        typing 2s steps(40, end),
+        blink-caret .7s step-end infinite;
+    }
+
+    @keyframes typing {
+      from {width: 0}
+      to {width: 100%}
+    }
+
+    @keyframes blink-caret {
+      from, to {border-color: transparent}
+      50% {border-color: orange;}
     }
 
     /* Navigation bar */
-    ul {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    #navbar {
       overflow: hidden;
       background-color: #808080;
     }
 
-    li {
+    #navbar a {
       float: left;
-    }
-
-    li a {
       font-family: 'Roboto', sans-serif;
       display: block;
       color: white;
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
+      font-size: 17px;
     }
 
-    li a:hover {
+    #navbar a:hover {
       background-color: #00693e;
+      color: black;
     }
+
+    .content {
+      padding: 16px;
+    }
+
+    .content Introduction {
+
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .sticky + .content {
+      padding-top: 60px;
+    }
+
   </style>
 </head>
 
 <body>
-  <ul>
-    <li><a>Introduction</a></li>
-    <li><a>Projects</a></li>
-    <li><a>Personal</a></li>
-    <li style="float:right"><a href="http://maxlata.github.io/maxlata.me/Resume.pdf">Resume</a></li>
-  </ul>
+  <div class="me-pic">
+    <div class="me-text">
+      <div class="typewriter">
+        <h1>Hi, I'm Max Lata.</h1>
+      </div>
+    </div>
+  </div>
 
-  <h1> Hello World! </h1>
-<body>
+  <div id="navbar">
+    <a>Introduction</a>
+    <a>Projects</a>
+    <a>Personal</a>
+    <a style="float:right" href="http://maxlata.github.io/maxlata.me/Resume.pdf">Resume</a>
+  </div>
 
+  <div class="content">
+    <p>The navbar will stick to the top when you reach its scroll position.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  </div>
+
+<script src="./js/stickyNavbar.js"></script>
+
+</body>
 </html>
