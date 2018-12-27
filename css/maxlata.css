@@ -15,7 +15,7 @@
 
 @keyframes typing {
   from {width: 0}
-  to {width: 100%}
+  to {width: auto}
 }
 
 @keyframes blink-caret {
@@ -54,6 +54,14 @@
   font-size: 80px;
   text-align: left;
   font-family: 'Oswald', sans-serif;
+}
+
+.content img {
+  display: block;
+  width: 20%;
+  height: 20%;
+  border-color: white;
+  border-width: medium;
 }
 
 .sticky {
