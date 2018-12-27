@@ -6,7 +6,7 @@
 
   color: white;
   font-family: 'Ramabhadra', sans-serif;
-  font-size: 60px;
+  font-size: 100px;
 
   animation:
     typing 2s steps(40, end),
@@ -51,8 +51,9 @@
 
 .content h1 {
   color: white;
-  font-size: 120px;
-  text-align: center;
+  font-size: 80px;
+  text-align: left;
+  font-family: 'Staatliches', cursive;
 }
 
 .sticky {
