@@ -48,7 +48,6 @@
 }
 
 .content {
-  padding: 16px;
   padding-top: 20px;
 }
 
@@ -71,16 +70,16 @@
   width: 100%;
 }
 
-.sticky {
+.sticky + .content {
   padding-top: 60px;
 }
 
-#grid {
+/* #grid {
   position: relative;
   width: 60%;
   margin: 0 auto;
   padding: 0;
-}
+} */
 
 .clear:after {
   content: "";
