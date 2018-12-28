@@ -11,6 +11,8 @@
   animation:
     typing 2s steps(40, end),
     blink-caret .7s step-end infinite;
+
+  animation-delay: 1s;
 }
 
 @keyframes typing {
@@ -47,6 +49,7 @@
 
 .content {
   padding: 16px;
+  padding-top: 20px;
 }
 
 .content h1 {
@@ -68,7 +71,7 @@
   width: 100%;
 }
 
-.sticky + .content {
+.sticky {
   padding-top: 60px;
 }
 
