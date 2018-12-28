@@ -58,10 +58,8 @@
 
 .content img {
   display: block;
-  width: 20%;
-  height: 20%;
-  border-color: white;
-  border-width: medium;
+  width: 5%;
+  height: 5%;
 }
 
 .sticky {
