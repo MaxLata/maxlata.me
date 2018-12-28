@@ -9,7 +9,7 @@
   font-size: 100px;
 
   animation:
-    typing 2s steps(40, end),
+    typing 3s steps(40, end),
     blink-caret .7s step-end infinite;
 
   animation-delay: 1s;
